@@ -38,7 +38,9 @@ header, footer, h1, h2, h3, p, div, .container01, .filler01 {
 /*****************************/
 h1 {
     font: 2em Rajdhani, "Noto Sans JP";
-    color: rgb(181, 242, 252);
+    font-style: italic;
+    font-weight: 900;
+    color: #05032b;
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
 }
 
