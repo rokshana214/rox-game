@@ -78,6 +78,7 @@ header {
 .js-hidden {
     display: none;
 }
+
 /*レベル設定エリア add-str*/
 /**********************************************/
 /* レベル設定エリア*/
@@ -87,17 +88,21 @@ header {
     font-size: 1em;
     font-weight: bold;
 }
+
 .level-box {
     display: flex;
     justify-content: space-around;
 }
+
 .level {
-    padding:5px;
+    padding: 5px;
     border-radius: 10px;
     font-size: 24px;
     user-select: none;
-    cursor: pointer; /*カーソルをポインターの形 (かたち)にする*/
+    cursor: pointer;
+    /*カーソルをポインターの形 (かたち)にする*/
 }
+
 .level-non-selected {
     color: whitesmoke;
     background: grey;
@@ -110,6 +115,7 @@ header {
     background: #ffd347;
     border: solid 2px #333;
 }
+
 /*********************************************************/
 /* レベル設定エリア add-end*/
 /*********************************************************/
@@ -172,15 +178,16 @@ header {
 .js-unclickable {
     pointer-events: none;
 }
+
 /* winner-line high-light */
 .js-pen_highLight {
-    border: solid 2px red;      
-    }
-    
+    border: solid 2px red;
+}
+
 .js-bear_highLight {
     border: solid 2px blue;
-    }
-    
+}
+
 /* ボタンのスタイル*/
 
 /* class = "btn" */
@@ -202,18 +209,21 @@ header {
     margin-top: 2px;
     text-align: left;
 }
+
 /********************************************************************************/
-/* New Game ボタン */ 
+/* New Game ボタン */
 /**********************************************************************************/
-/* class = ".btn-container" */ 
-.btn-container { 
-    padding-top: 0px; 
-} 
-/* id="btn90" */ 
-#btn90:hover { 
-    background-color: #ffd347; 
-    transition-duration: 0.4s; 
+/* class = ".btn-container" */
+.btn-container {
+    padding-top: 0px;
 }
+
+/* id="btn90" */
+#btn90:hover {
+    background-color: #ffd347;
+    transition-duration: 0.4s;
+}
+
 /*******************************************************************************/
 /* footer
             
@@ -254,11 +264,13 @@ footer>p {
         padding-top: 2px;
 
     }
+
     header {
 
         font-size: 24px;
 
     }
+
     #msgtext {
 
         font-size: 20px;
@@ -271,34 +283,38 @@ footer>p {
             
             /* mobileのときのスタイル */
 
-            @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+    .wrapper {
 
-                .wrapper {
-            
-                    padding-bottom: 23px;
-                    /*<footer+paddingの高さ*/
-            
-                }
-            
-                .btn-container {
-            
-                    padding-top: 2px;
-            
-                }
-                
-                .level-container { /*fukada-add*/
-                    margin: 0px 0px 20px; /*fukada-add*/
-                } /*fukada-add*/
-            
-                header {
-            
-                    font-size: 24px;
-            
-                }
-                #msgtext {
-            
-                    font-size: 20px;
-            
-                }
-            
-            }
+        padding-bottom: 23px;
+        /*<footer+paddingの高さ*/
+
+    }
+
+    .btn-container {
+
+        padding-top: 2px;
+
+    }
+
+    .level-container {
+        /*fukada-add*/
+        margin: 0px 0px 20px;
+        /*fukada-add*/
+    }
+
+    /*fukada-add*/
+
+    header {
+
+        font-size: 24px;
+
+    }
+
+    #msgtext {
+
+        font-size: 20px;
+
+    }
+
+}
